@@ -1,0 +1,193 @@
+<html>
+	<head>
+    <meta charset="utf-8" />
+		<title>Cadastro de Vendas</title>
+
+		<!-- Bootstrap início -->
+		<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+crossorigin="anonymous">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" 
+crossorigin="anonymous">
+
+<!-- Fonte customizado-->
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    
+    <!-- Bootstrap fim -->
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <script src="app.js"></script>
+
+	</head>
+
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger mb-5 navbar-default navbar-fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+           <img src="logos.png" width="50" height="35" alt="Orçamento pessoal">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="cadasto.html">CADASTRO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consulta.html">CONSULTA</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col mb-5">
+          <h1 class="display-4 text-capitalize">Registro de vendas de dados ao dia</h1>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-2">
+          <select class="form-control" id="ano">
+            <option value="">ANO</option>
+            <option value="2018">1990</option>
+            <option value="2019">1991</option>
+            <option value="2018">1992</option>
+            <option value="2019">1993</option>
+            <option value="2020">1994</option>
+            <option value="2021">1995</option>
+            <option value="2018">1996</option>
+            <option value="2018">1997</option>
+            <option value="2019">2998</option>
+            <option value="2020">1999</option>
+            <option value="2021">2000</option>
+            <option value="2018">2001</option>
+            <option value="2019">2002</option>
+            <option value="2020">2003</option>
+            <option value="2021">2004</option>
+            <option value="2018">2005</option>
+            <option value="2018">2006</option>
+            <option value="2019">2007</option>
+            <option value="2020">2008</option>
+            <option value="2021">2009</option>
+            <option value="2018">2010</option>
+            <option value="2019">2011</option>
+            <option value="2020">2012</option>
+            <option value="2021">2013</option>
+            <option value="2018">2014</option>
+            <option value="2019">2015</option>
+            <option value="2020">2016</option>
+            <option value="2021">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+          <select class="form-control" id="mes">
+            <option value="">MÊS</option>
+            <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+          </select>
+        </div>
+        
+        <div class="col-md-2">
+          <input type="text" class="form-control" placeholder="DIA" id="dia" />
+        </div>
+
+         <div class="col-md-6">
+          <select class="form-control" id="tipo">
+            <option value="">OPERADORA</option>
+            <option value="1">UNITEL</option>
+            <option value="1">ZAP</option>
+            <option value="2">DSTV</option>
+            <option value="3">MOVICEL</option>
+            <option value="4">AFRICELL</option>
+            <option value="5">NET-ONE</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row mb-2">
+        <div class="col-md-12 d-flex">
+          <input type="text" class="form-control" placeholder="NOME DO CLIENTE" id="descricao"/>
+        </div>
+
+     </div>
+  
+        <div class="row mb-2">
+        <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="NOME DO OPERADOR" id="operador"/>
+        </div>
+
+        <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="VALOR A PAGAR 0.00 KZS" id="valor"/>
+        </div>
+      </div>
+      
+      <div class="row mb-2">
+        <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="PAGO" id="operador"/>
+        </div>
+
+        <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="VALIDAÇÃO" id="valor"/>
+        </div>
+      </div>
+     
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-primary" type="button" onclick="cadastrarDespesa()">FAZER PAGAMENTO</button>
+      </div>
+         
+ 
+      
+    <!-- Modal -->
+    <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div id="modal_titulo_div">
+            <h5 class="modal-title" id="modal_titulo"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modal_conteudo"></div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" id="modal_btn">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>	
+
+</html>
